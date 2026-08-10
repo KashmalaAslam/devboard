@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Button from "../../../components/ui/Button";
 import Card from "../../../components/ui/Card";
 import Input from "../../../components/ui/Input";
@@ -56,12 +57,14 @@ export default function LoginPage() {
                 Remember me
               </label>
 
-              <button
-                type="button"
-                className="text-purple-500 hover:text-purple-600"
-              >
-                Forgot Password?
-              </button>
+              <Link href="forget-password">
+                <button
+                  type="button"
+                  className="text-purple-500 hover:text-purple-600 cursor-pointer"
+                >
+                  Forgot Password?
+                </button>
+              </Link>
             </div>
 
             <Button icon={ArrowRight} iconPosition="right">
@@ -84,9 +87,11 @@ export default function LoginPage() {
           {/* Footer */}
           <p className="mt-6 text-center text-sm text-slate-500">
             Don't have an account?{" "}
-            <span className="font-medium text-purple-500 cursor-pointer">
-              Create Account
-            </span>
+            <Link href="/signup">
+              <span className="font-medium text-purple-500 cursor-pointer">
+                Create Account
+              </span>
+            </Link>
           </p>
         </div>
       </div>
