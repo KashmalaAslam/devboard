@@ -67,7 +67,7 @@ export default function LoginPage() {
               </Link>
             </div>
 
-            <Button icon={ArrowRight} iconPosition="right">
+            <Button icon={ArrowRight} iconPosition="right" fullWidth>
               Sign In
             </Button>
           </form>
@@ -80,7 +80,12 @@ export default function LoginPage() {
           </div>
 
           {/* Google Button */}
-          <Button variant="outline" icon={FcGoogle} iconPosition="left">
+          <Button
+            variant="outline"
+            icon={FcGoogle}
+            iconPosition="left"
+            fullWidth
+          >
             Continue with Google
           </Button>
 

@@ -101,7 +101,12 @@ export default function SignupPage() {
 
             {/* Create Account */}
             <div className="pt-4">
-              <Button type="submit" icon={ArrowRight} iconPosition="right">
+              <Button
+                type="submit"
+                icon={ArrowRight}
+                iconPosition="right"
+                fullWidth
+              >
                 Create Account
               </Button>
             </div>
@@ -117,7 +122,12 @@ export default function SignupPage() {
           </div> */}
 
           {/* Google Button */}
-          <Button variant="outline" icon={FcGoogle} iconPosition="left">
+          <Button
+            variant="outline"
+            icon={FcGoogle}
+            iconPosition="left"
+            fullWidth
+          >
             Continue with Google
           </Button>
 

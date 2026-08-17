@@ -4,6 +4,9 @@ export default function Button({
   iconPosition = "left",
   variant = "primary",
   type = "button",
+  fullWidth = false,
+  onClick,
+  className = "",
 }) {
   const variants = {
     primary:
@@ -15,8 +18,8 @@ export default function Button({
   return (
     <button
       type={type}
+      onClick={onClick}
       className={`
-        w-full
         rounded-sm
         px-4
         py-2.5
@@ -27,13 +30,13 @@ export default function Button({
         justify-center
         gap-2
         cursor-pointer
+        ${fullWidth ? "w-full" : ""}
         ${variants[variant]}
+        ${className}
       `}
     >
       {Icon && iconPosition === "left" && <Icon size={18} />}
-
       <span>{children}</span>
-
       {Icon && iconPosition === "right" && <Icon size={18} />}
     </button>
   );

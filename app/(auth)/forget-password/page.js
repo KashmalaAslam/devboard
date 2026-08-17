@@ -46,7 +46,7 @@ export default function ForgotPasswordForm() {
           </div>
 
           {/* Submit */}
-          <Button icon={ArrowRight} iconPosition="right">
+          <Button icon={ArrowRight} iconPosition="right" fullWidth>
             Send reset link
           </Button>
         </form>
