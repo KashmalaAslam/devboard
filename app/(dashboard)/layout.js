@@ -25,7 +25,7 @@ export default function DashboardLayout({ children }) {
         className={`
           
           pt-20
-          bg-slate-50
+          bg-white
           overflow-y-auto
           transition-[padding] duration-300 ease-in-out
           ${collapsed ? "lg:pl-20" : "lg:pl-64"}

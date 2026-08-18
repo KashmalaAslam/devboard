@@ -30,6 +30,7 @@ export default function Button({
         justify-center
         gap-2
         cursor-pointer
+        text-sm
         ${fullWidth ? "w-full" : ""}
         ${variants[variant]}
         ${className}
