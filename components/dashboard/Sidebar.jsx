@@ -10,6 +10,7 @@ import {
   Users,
   Settings,
   LogOut,
+  ChartSpline,
 } from "lucide-react";
 
 import Link from "next/link";
@@ -21,6 +22,7 @@ const navItems = [
   { label: "Tasks", href: "/tasks", icon: CheckSquare },
   { label: "Calendar", href: "/calendar", icon: CalendarDays },
   { label: "Team", href: "/team", icon: Users },
+  { label: "Reports", href: "/reports", icon: ChartSpline },
 ];
 
 export default function Sidebar({ collapsed, mobileOpen, setMobileOpen }) {
